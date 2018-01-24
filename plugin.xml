@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin id="lycwed-cordova-plugin-admob-adcolony"
-    version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <name>lycwed-cordova-plugin-admob-adcolony</name>
@@ -11,13 +11,6 @@
     </engines>
 
     <platform name="android">
-        <framework src="src/build.gradle" custom="true" type="gradleReference" />
-        <asset src="src/proguard-custom.txt" target="proguard-custom.txt" />
-
-        <framework src="com.adcolony:sdk:3.3.0" />
-        <framework src="com.google.android.gms:play-services-ads:+" />
-        <framework src="com.android.support:support-annotations:+" />
-        
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -33,6 +26,12 @@
                 android:configChanges="keyboardHidden|orientation|screenSize"
                 android:hardwareAccelerated="true"/>
         </config-file>
+
+        <framework src="com.adcolony:sdk:3.3.0" />
+        <framework src="com.google.android.gms:play-services-ads:+" />
+        <framework src="com.android.support:support-annotations:+" />
+        <framework src="src/android/adcolony.gradle" custom="true" type="gradleReference" />
+        <asset src="src/android/proguard-custom.txt" target="proguard-custom.txt" />
     </platform>
 
     <platform name="ios">
