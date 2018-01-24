@@ -1,0 +1,25 @@
+/** 
+ * Make sure you are configuring your project or module's 'repositories' configuration
+ * block and not your buildscript's 'repositories' configuration block
+ */
+repositories {
+    /** The default repository for Android Studio projects */
+    jcenter() 
+    /** The repository required for AdColony 3.0 and above */
+    maven {
+      url  "https://adcolony.bintray.com/AdColony"      
+    }
+}
+
+android {
+  buildTypes {
+    debug {
+      minifyEnabled true
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'assets/www/proguard-custom.txt'
+    }
+    release {
+      minifyEnabled true
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'assets/www/proguard-custom.txt'
+    }
+  }
+}
