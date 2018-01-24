@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin id="lycwed-cordova-plugin-admob-adcolony"
-    version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    version="1.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <name>lycwed-cordova-plugin-admob-adcolony</name>
@@ -21,16 +21,16 @@
         <config-file parent="/manifest/application" target="AndroidManifest.xml">
             <activity android:name="com.adcolony.sdk.AdColonyInterstitialActivity"
                 android:configChanges="keyboardHidden|orientation|screenSize"
-                android:hardwareAccelerated="true"/>
+                android:hardwareAccelerated="true" />
             <activity android:name="com.adcolony.sdk.AdColonyAdViewActivity"
                 android:configChanges="keyboardHidden|orientation|screenSize"
-                android:hardwareAccelerated="true"/>
+                android:hardwareAccelerated="true" />
         </config-file>
 
         <framework src="com.adcolony:sdk:3.3.0" />
         <framework src="com.google.android.gms:play-services-ads:+" />
         <framework src="com.android.support:support-annotations:+" />
-        <framework src="src/android/adcolony.gradle" custom="true" type="gradleReference" />
+        <!-- <framework src="src/android/adcolony.gradle" custom="true" type="gradleReference" /> -->
         <asset src="src/android/proguard-custom.txt" target="proguard-custom.txt" />
     </platform>
 
@@ -38,6 +38,6 @@
         <pods-config ios-min-version="9.0" use-frameworks="true" />
         <pod id="GoogleMobileAdsMediationAdColony" version="3.3.0.0" />
 
-        <dependency id="cordova-plugin-cocoapod-support"/>
+        <dependency id="cordova-plugin-cocoapod-support" />
     </platform>
 </plugin>

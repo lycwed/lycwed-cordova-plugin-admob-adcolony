@@ -4,10 +4,10 @@
  */
 repositories {
     /** The default repository for Android Studio projects */
-    jcenter() 
+    jcenter()
     /** The repository required for AdColony 3.0 and above */
     maven {
-      url  "https://adcolony.bintray.com/AdColony"      
+      url  "https://adcolony.bintray.com/AdColony"
     }
 }
 
