@@ -1,3 +1,6 @@
+## [1.0.5]
+- Remove play-services-ads from plugin.xml
+
 ## [1.0.4]
 - Set adcolony.jar as source-file not framework
 
