@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin id="lycwed-cordova-plugin-admob-adcolony"
-    version="1.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    version="1.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <name>lycwed-cordova-plugin-admob-adcolony</name>
@@ -27,7 +27,8 @@
                 android:hardwareAccelerated="true" />
         </config-file>
 
-        <framework src="src/android/adcolony.jar" />
+        <source-file src="src/android/adcolony.jar" target-dir="libs" />
+
         <framework src="com.google.android.gms:play-services-ads:+" />
     </platform>
 

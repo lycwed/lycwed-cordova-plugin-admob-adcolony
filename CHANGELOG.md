@@ -1,3 +1,6 @@
+## [1.0.4]
+- Set adcolony.jar as source-file not framework
+
 ## [1.0.3]
 - Add adcolony.jar
 
