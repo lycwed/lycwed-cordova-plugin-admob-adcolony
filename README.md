@@ -1,6 +1,6 @@
-# Cordova AdMob Mediation Plugin for Facebook
+# Cordova AdMob Mediation Plugin for AdColony
 
-Plugin compatible with cordova-plugin-admob-free
+This mediation plugin is compatible with cordova-plugin-admob-free.
 
 ## Installation
 
